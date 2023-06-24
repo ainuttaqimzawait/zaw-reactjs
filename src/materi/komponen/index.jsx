@@ -1,10 +1,13 @@
 import React from "react";
 import ClassComponent from "./pembahasan/classComponent";
-class Komponen extends React.Component {
+import functionalComponent from "./pembahasan/functionalComponent";
+
+export default class Komponen extends React.Component {
     render() {
         return (
             <div>
                 <ClassComponent />
+                <functionalComponent />
             </div>
         )
     }
