@@ -1,4 +1,4 @@
-import Komponen from "./materi/komponen";
+import Komponen from "./tugas/komponen";
 
 function App() {
   return (

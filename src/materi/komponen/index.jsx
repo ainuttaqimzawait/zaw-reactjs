@@ -1,13 +1,13 @@
 import React from "react";
 import ClassComponent from "./pembahasan/classComponent";
-import functionalComponent from "./pembahasan/functionalComponent";
+import FunctionalComponent from "./pembahasan/funcomponent";
 
 export default class Komponen extends React.Component {
     render() {
         return (
             <div>
-                <ClassComponent />
-                <functionalComponent />
+                <ClassComponent nama="ade irawan" />
+                <FunctionalComponent nama="dea prakoso" />
             </div>
         )
     }
