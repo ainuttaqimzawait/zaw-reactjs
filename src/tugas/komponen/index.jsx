@@ -1,5 +1,5 @@
 import React from "react";
-import ClassComponent from "./tugas/library";
+import ClassComponent from "./library/classComponent";
 
 export default class Komponen extends React.Component {
     render() {
