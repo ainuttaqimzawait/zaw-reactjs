@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(101, 71, 165), rgb(218, 215, 225), rgb(166, 45, 117));
+}
+
+form {
+    border: 1px solid;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form {
+    padding-top: 10px;
+}
