@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import "./style.css";
+
 
 class Body extends React.Component {
     constructor(props) {
@@ -11,18 +13,29 @@ class Body extends React.Component {
         }
     }
 
-    componentDidMount() {
-        fetch('https://newsapi.org/v2/everything?q=' + this.state.input + '&from=2023-06-07&sortBy=publishedAt&apiKey=f5d1256f0bd24c3eb5ca73795f655e97')
+    getData = () => {
+        fetch('https://newsapi.org/v2/everything?q=' + this.state.input + '&from=2023-07-07&to=2023-07-07&sortBy=popularity&apiKey=f5d1256f0bd24c3eb5ca73795f655e97')
             .then(response => response.json())
             .then(response => {
                 this.setState({ articles: response.articles })
             })
-        // .finally(() => document.querySelector('.loading').innerHTML = "");
+            .finally(() => document.querySelector('.loading').innerHTML = "");
     }
 
-    handleSubmit = () => {
-        this.setState({ input: this.state.input })
-        alert(this.state.input)
+    componentDidMount() {
+        this.getData(this.state.input)
+    }
+
+    // handleSubmit = (e) => {
+    //     this.setState({ input: e.target.value })
+    //     alert(this.state.input)
+    // }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log(this.state.input);
+        if (prevState.input !== this.state.input) {
+            this.getData(this.state.input)
+        }
     }
     render() {
         console.log(this.state.input);
@@ -30,18 +43,9 @@ class Body extends React.Component {
             <Container style={{ marginTop: "40px" }}>
                 <Row>
                     <Col>
-                        {/* <Form onSubmit={this.handleSubmit} className="d-flex">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                                onChange={e => this.setState({ input: e.target.value }, () => console.log(this.state))}
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form> */}
-                        <input type="text" className="myInput" onLoad={e => this.setState({ input: e.target.value }, () => console.log(this.state.input))} placeholder="Search for names.."
+                        <input type="text" className="myInput" onChange={e => this.setState({ input: e.target.value }, () => console.log(this.state.input))} placeholder="Search for names.."
                             title="Type in a name" />
+                        {/* <button onClick={this.handleSubmit}>search</button> */}
 
                         <h1 style={{ display: "flex", justifyContent: "center" }}>Berita Hari Ini</h1>
                         <div className="loading">
