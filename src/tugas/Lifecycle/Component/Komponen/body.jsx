@@ -14,7 +14,7 @@ class Body extends React.Component {
     }
 
     getData = () => {
-        fetch('https://newsapi.org/v2/everything?q=' + this.state.input + '&from=2023-06-13&sortBy=publishedAt&apiKey=f5d1256f0bd24c3eb5ca73795f655e97')
+        fetch('https://newsapi.org/v2/everything?q=' + this.state.input + '&from=2023-06-13&sortBy=publishedAt&apiKey=468dc73a648c440292da56bf25aceb95')
             .then(response => response.json())
             .then(response => {
                 this.setState({ articles: response.articles })
