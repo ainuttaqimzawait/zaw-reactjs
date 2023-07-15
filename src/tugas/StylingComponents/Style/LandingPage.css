@@ -1,0 +1,84 @@
+body {
+    background-color: lightblue;
+    background-image: url('background-dark.jpg');
+}
+
+.navbar-togle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.image-brand {
+    border-radius: 100%;
+}
+
+.nama-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.home-contact {
+    width: 60px;
+    height: 240px;
+    position: absolute;
+    margin-top: 200px;
+    background-color: rgb(247, 251, 252);
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+    ;
+}
+
+.homeSosmed {
+    padding: 10px;
+}
+
+.home-intro {
+    display: flex;
+    text-align: center;
+    margin: 100px auto;
+    color: darkolivegreen;
+}
+
+.home-intro-name {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.home-intro-info {
+    font-size: 1.25rem;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.home-chat {
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+}
+
+.home-live-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-chat-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 7px;
+    background-color: white;
+    border-radius: 10px
+}
+
+.image-chat {
+    margin-top: -20px;
+    margin-left: 10px;
+}

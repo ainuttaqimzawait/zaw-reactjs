@@ -1,0 +1,149 @@
+body {
+    background-color: lightblue;
+    background-image: url('background-dark.jpg');
+}
+
+.navbar-togle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.navbar-togle a {
+    text-decoration: none;
+    color: rgb(185, 182, 175);
+}
+
+.image-brand {
+    border-radius: 100%;
+}
+
+.nama-brand {
+    color: rgb(185, 182, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.home-contact {
+    width: 60px;
+    height: 240px;
+    position: absolute;
+    margin-top: 50px;
+    background-color: rgb(247, 251, 252);
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+    ;
+}
+
+.homeSosmed {
+    padding: 10px;
+}
+
+.home-intro {
+    display: flex;
+    text-align: center;
+    margin: 100px auto;
+    color: darkolivegreen;
+}
+
+.home-intro-name {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.home-intro-info {
+    font-size: 1.25rem;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.home-chat {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+.home-live-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-chat-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 7px;
+    background-color: white;
+    border-radius: 10px
+}
+
+.image-chat {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.about h1 {
+    color: rgb(185, 182, 175);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.garis {
+    display: flex;
+    justify-content: center;
+}
+
+.garis div {
+    border: 4px solid rgb(185, 182, 175);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.about h4 {
+    color: rgb(185, 182, 175);
+    margin: 6vh 10vh;
+    display: flex;
+    text-align: center;
+}
+
+.about h2 {
+    color: rgb(185, 182, 175);
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.about ul {
+    color: rgb(185, 182, 175);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 30vh;
+}
+
+.about ul li {
+    background-color: #5a5252;
+    padding: 8px;
+    margin: auto 10px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.project h1 {
+    color: rgb(185, 182, 175);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
