@@ -9,8 +9,9 @@
 // import Form from "./tugas/Form";
 // import Lifecycle from "./tugas/Lifecycle/Index";
 // import Hooks from "./tugas/Hooks";
+// import Ruter from "./tugas/Router";
 
-import Ruter from "./tugas/Router";
+import Redux from "./materi/Redux";
 
 
 
@@ -26,7 +27,8 @@ function App() {
       {/* <Form /> */}
       {/* <Lifecycle /> */}
       {/* <Hooks /> */}
-      <Ruter />
+      {/* <Ruter /> */}
+      <Redux />
     </div>
   );
 }
